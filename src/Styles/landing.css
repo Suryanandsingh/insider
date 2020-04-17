@@ -1,0 +1,92 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containers{
+    height: 100vh;
+    
+    /* background-color: cadetblue; */
+}
+.upload-container {
+    /* background-color: yellow; */
+    flex-direction: column;
+    /* padding: 10%; */
+    width: 50%;
+    height: 50%;
+}
+.upload-container div{
+    padding: 2%;
+}
+.upload-container div h3{
+    margin: 0%;
+    text-align: center;
+    letter-spacing: 1px
+}
+.upload-container div p{
+    margin: 0%;
+    font-size: small;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.upload-container label{
+    margin: 5px;
+    padding: 1.2%;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
+}
+.upload-container label:hover{
+    background-color: black;
+    color: white;
+}
+.upload-container input{
+    display: none;
+}
+.img-containers {
+    display: flex;
+    flex-direction: row;
+}
+.img-content{
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.image-save {
+    display: flex;
+    flex-direction: row;
+}
+.image-save button{
+    margin: 10px;;
+    width: 100px;
+    padding: 3%;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
+    font-size: medium;
+    outline: none;
+    background-color: white;
+}
+.image-save button:hover{
+    background-color: black;
+    color: white;
+}
+@media only screen and (max-width: 550px){
+    .containers{
+        min-height: auto;
+        /* background-color: cadetblue; */
+    }
+    .img-containers {
+        display: flex;
+        flex-direction: column;
+    }
+}
